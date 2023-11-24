@@ -14,7 +14,7 @@ if($senha <> $confirmasenha) {
 
 }else {
     $cpf = $_SESSION['cpf'];
-    $senhacriptografada = criptografia($senha);
+    $senhacriptografada = criptografar($senha);
 
     $update = "UPDATE login SET senha = '$senhacriptografada' WHERE cpf = '$cpf'";
     $query = mysqli_query($conexao, $update); 
