@@ -36,3 +36,7 @@ VALUES
 INSERT INTO login (cpf, login, senha, nivel)
 VALUES
 ('12345678900', 'admin', 'admin', 1);
+
+SELECT * FROM usuario;login
+
+UPDATE login SET senha = MD5(senha) WHERE login = 'admin';
