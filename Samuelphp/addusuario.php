@@ -33,17 +33,18 @@ if ($nome <> NULL) {
 		VALUES
 		('$cpf', '$login', '$senhacriptografada', 3)";
 		$querylogin = mysqli_query($conexao, $insertlogin);
-		echo '<script>alert("Usuário cadastrado com sucesso");
+		echo '<script>alert("Usuário cadastdado com sucesso");
 				window.location="addusuario.php";
 				</script>';
 	} else {
-		echo '<script>alert("CPF e/ou Login já cadastrados");
+		echo '<script>alert("CPF e/ou Login já cadastdados");
 				window.location="addusuario.php";
 				</script>';
 	}
 }
 
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -56,12 +57,19 @@ if ($nome <> NULL) {
 	<center>
 		<h1>Adicionar Usuário</h1>
 		<form id="form-addusuario" action="#" method="POST">
-			Nome: <input type="text" name="nome" required><br>
-			CPF: <input type="text" name="cpf" required><br>
-			Telefone: <input type="text" name="telefone" required><br>
-			Login: <input type="text" name="login" required><br>
-			Senha: <input type="password" name="senha" required><br><br>
-			<input type="submit" name="enviar" value="Enviar">
+			<table border="1px">
+			<tr>
+			<td>Nome:<input type="text" name="nome" required></td>
+			<td>CPF:<input type="text" name="cpf" required></td>
+            </tr>
+			<tr>
+			<td>Telefone: <input type="text" name="telefone" required></td>
+			<td>Login: <input type="text" name="login" required></td>
+            </tr>
+			<tr>
+			<td>Senha: <input type="password" name="senha" required></td>
+			<td><input type="submit" name="enviar" value="Enviar"></td>
+            </tr>
 		</form>
 	</center>
 </body>
