@@ -1,5 +1,5 @@
 #criando o banco.
-CREATE DATABASE seguranca_manha;
+CREATE DATABASE seguranca_01;
 
 #usando o banco criado
 USE seguranca_manha;
