@@ -2,7 +2,7 @@
 CREATE DATABASE seguranca_01;
 
 #usando o banco criado
-USE seguranca_manha;
+USE seguranca_01;
 
 #tabela usuario: colunas(nome, cpf, telefone) cahve primaria: cpf
 CREATE TABLE usuario (
