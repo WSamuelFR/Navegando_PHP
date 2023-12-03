@@ -58,7 +58,7 @@ VALUES
 ('Gerente'),
 ('Usuário');
 
-inserindo dados na tabela login
+#inserindo dados na tabela login
 INSERT INTO login (cpf, login, senha, nivel)
 VALUES
 ('12345678900', 'admin', 'admin', 1);
