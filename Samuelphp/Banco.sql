@@ -35,15 +35,9 @@ cpf VARCHAR(15),
 cpf_alterado VARCHAR(15),
 DATA TIMESTAMP,
 novo_nivel INTEGER,
-CONSTRAINT fk_cpf_log 
-FOREIGN KEY (cpf)
-REFERENCES usuario (cpf),
-CONSTRAINT fk_cpf_alterado
-FOREIGN KEY (cpf_alterado)
-REFERENCES usuario (cpf),
-CONSTRAINT fk_nivel_novo
-FOREIGN KEY (novo_nivel)
-REFERENCES nivel (id)
+CONSTRAINT fk_cpf_log FOREIGN KEY (cpf) REFERENCES usuario (cpf),
+CONSTRAINT fk_cpf_alterado FOREIGN KEY (cpf_alterado) REFERENCES usuario (cpf),
+CONSTRAINT fk_nivel_novo FOREIGN KEY (novo_nivel) REFERENCES nivel (id)
 );
 
 #inserindo dados na tabela usuario
