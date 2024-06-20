@@ -1,6 +1,6 @@
 <?php
 
-$conexao = mysqli_connect('localhost', 'root', '20019026', 'projeto1', '3306');
+$conexao = mysqli_connect('', '', '', '', '');
 if (!$conexao) {
     die('Não foi possível conectar');
 
