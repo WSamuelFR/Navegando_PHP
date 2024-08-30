@@ -13,7 +13,13 @@ etnia VARCHAR(50),
 pais_natal VARCHAR(200),
 pais_atual VARCHAR(200),
 email VARCHAR(200),
-telefone BIGINT
+telefone BIGINT,
+cep BIGINT,
+estado VARCHAR(150),
+cidade VARCHAR(200),
+bairro VARCHAR(200),
+rua VARCHAR(200),
+numero_lote INT
 );
 
 CREATE TABLE empresa (
@@ -23,17 +29,16 @@ registro_ebt BIGINT,
 categoria VARCHAR(200),
 pais_cede VARCHAR(200),
 email VARCHAR(200),
-telefone BIGINT
-);
-
-CREATE TABLE endereco (
+telefone BIGINT,
 cep BIGINT,
 estado VARCHAR(150),
 cidade VARCHAR(200),
 bairro VARCHAR(200),
 rua VARCHAR(200),
-numero_lote INT,
-id_endereco BIGINT AUTO_INCREMENT PRIMARY KEY,
+numero_lote INT
+);
+
+CREATE TABLE cliente (
 cpf VARCHAR(15) REFERENCES hospede,
 cnpj VARCHAR(15) REFERENCES empresa,
 CONSTRAINT fk_cpf FOREIGN KEY (cpf) REFERENCES hospede (cpf),
